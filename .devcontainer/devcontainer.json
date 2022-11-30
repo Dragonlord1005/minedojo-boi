@@ -1,14 +1,10 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the
-// README at: https://github.com/devcontainers/templates/tree/main/src/python
+// README at: https://github.com/devcontainers/templates/tree/main/src/ubuntu
 {
-	"name": "Python 3",
-	"image": "mcr.microsoft.com/devcontainers/python:3.9",
-	"features": {
-		"ghcr.io/devcontainers/features/java:1": {
-			"version": 8
-		},
-		"ghcr.io/devcontainers-contrib/features/poetry:1": {}
-	},
+	"name": "Ubuntu",
+	"image": "mcr.microsoft.com/devcontainers/base:jammy",
+
+
 	"customizations": {
 		"vscode": {
 			"extensions": [
@@ -19,6 +15,12 @@
 				"WakaTime.vscode-wakatime"
 			]
 		}
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/java:1": {
+			"version": "8"
+		},
+		"ghcr.io/devcontainers-contrib/features/poetry:1": {}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
@@ -28,7 +30,7 @@
 	// "forwardPorts": [],
 
 	// Use 'postCreateCommand' to run commands after the container is created.
-	// "postCreateCommand": "pip3 install --user -r requirements.txt",
+	// "postCreateCommand": "uname -a",
 
 	// Configure tool-specific properties.
 	// "customizations": {},
