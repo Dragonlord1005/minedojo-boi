@@ -18,7 +18,8 @@
 	},
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {
-			"version": "8"
+			"version": "8",
+			"installGradle": true
 		},
 		"ghcr.io/devcontainers-contrib/features/poetry:1": {}
 	}
